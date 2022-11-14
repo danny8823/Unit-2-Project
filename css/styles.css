@@ -19,8 +19,24 @@ p {
     font-size: 18px;
 }
 
+/* NAV */
+ul {
+    padding-left: 0px;
+}
+
 li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.home, .portfolio, .contact {
+    background-color: white;
+    width: 100%;
+    padding: 10px 10px;
 }
 
 a {
@@ -32,8 +48,74 @@ a:hover {
     color: #CFAF85;
 }
 
+/* INTRO CARD */
+.intro {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+.intropic {
+    height: auto;
+    width: 250px;
+}
+
+/* PORTFOLIO SECTION */
+.portpics {
+    height: auto;
+    width: 90%;
+}
+
 .container {
     background-color: white;
+    padding: 10px 0 30px 0;
+    width: 100%;
+}
+
+/* CONTACT SECTION */
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding: 40px 5px 0 5px;
+    border-bottom: 1px solid black;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-title {
+    padding-bottom: 20px;
+}
+
+.ftnav {
+    display: none;
+}
+
+.btt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* SKILL SECTION */
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skillscard {
+    flex: 1 1 100px;
+}
+
+.htmlbadge, .cssbadge, .javasbadge {
+    width: 100px;
 }
 
 /* FONTS */
@@ -48,100 +130,11 @@ nav, footer, .intro p, .contact-card {
 
 /* MEDIA Q's */
 
-/* -----start----------320px----------------- */
-@media (min-width: 320px) {
-    body {
-        padding: 0px 0 20px 0;
-        
-    }
-
-    ul {
-        padding-left: 0px;
-    }
-
-    li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 5px;
-        text-align: center;
-    }
-
-    .home, .portfolio, .contact {
-        background-color: white;
-        width: 100%;
-        padding: 10px 10px;
-    }
-
-    .intro {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0 10px 0 10px;
-    }
-
-    .container {
-        padding: 10px 0 30px 0;
-        width: 100%;
-    }
-
-    .intropic {
-        height: auto;
-        width: 250px;
-    }
-
-    .portpics {
-        height: auto;
-        width: 90%;
-    }
-
-    .contact-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 40px;
-        padding: 40px 5px 0 5px;
-        border-bottom: 1px solid black;
-        width: 90%;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .contact-title {
-        padding-bottom: 20px;
-    }
-
-    .footnav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .skills {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .skillscard {
-        flex: 1 1 100px;
-    }
-
-    .htmlbadge, .cssbadge, .javasbadge {
-        width: 100px;
-    }
-}
-/* -----end----------320px----------------- */
-
-
-
 /* -----start----------768px----------------- */
 @media (min-width: 768px) {
+    .btt {
+        display: none;
+    }
     nav {
         display: flex;
         flex-direction: column;
@@ -164,6 +157,10 @@ nav, footer, .intro p, .contact-card {
     .home, .portfolio, .contact {
         background-color:#39F1CF;
         padding: 0 10px 0 10px;
+    }
+
+    .intropic {
+        width: 300px;
     }
 
     .portpics {
@@ -205,6 +202,15 @@ nav, footer, .intro p, .contact-card {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .footnav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+        margin: 0 auto;
     }
 
     footer a {
@@ -294,6 +300,15 @@ nav, footer, .intro p, .contact-card {
 
     .intropic {
         width: 400px;
+    }
+
+    .footnav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
