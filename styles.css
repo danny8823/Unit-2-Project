@@ -41,3 +41,256 @@ nav, footer, .intro p, .contact-card {
 .card {
     font-family: 'PT-Serif', sans-serif;
 }
+
+/* MEDIA Q's */
+
+/* -----start----------320px----------------- */
+@media (min-width: 320px) {
+    body {
+        padding: 0px 0 20px 0;
+        
+    }
+
+    ul {
+        padding-left: 0px;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    .home, .portfolio, .contact {
+        background-color: white;
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 10px 0 10px;
+    }
+
+    .container {
+        padding: 10px 0 30px 0;
+        width: 100%;
+    }
+
+    .intropic {
+        height: auto;
+        width: 250px;
+    }
+
+    .portpics {
+        height: auto;
+        width: 90%;
+    }
+
+    .contact-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+        padding: 40px 5px 0 5px;
+        border-bottom: 1px solid black;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .contact-title {
+        padding-bottom: 20px;
+    }
+
+    .footnav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skillscard {
+        flex: 1 1 100px;
+    }
+
+    .htmlbadge, .cssbadge, .javasbadge {
+        width: 100px;
+    }
+}
+/* -----end----------320px----------------- */
+
+
+
+/* -----start----------768px----------------- */
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    main {
+        background-color: white;
+        padding-top: 20px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .home, .portfolio, .contact {
+        background-color: lightgray;
+        padding: 0 10px 0 10px;
+    }
+
+    .portpics {
+        width: 368px;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        max-width: 95%;
+        padding-bottom: 60px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .card {
+        flex: 1 1 350px;
+        text-align: center;
+    }
+
+    .card p {
+        width: 320px;
+        text-align: center;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .ftnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer a {
+        padding-top: 20px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .skillscard {
+        flex: 1 1 200px;
+    }
+
+    .htmlbadge, .cssbadge, .javasbadge {
+        width: 100px;
+    }
+}
+/* -----end----------768px----------------- */
+
+/* -----start----------1024px----------------- */
+@media (min-width: 1024px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    ul {
+        margin: 0 0 0 0;
+    }
+
+    li {
+        padding-top: 50px;
+    }
+
+    header {
+        max-width: 100%;
+        margin: 0 auto;
+        margin: 0 0 0 0;
+    }
+
+    main {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .intro p{
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .intro {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .card {
+        flex: 1 1 100px;
+        padding-bottom: 40px;
+    }
+
+    .card p {
+        width: 250px;
+
+    }
+    .portpics {
+        max-width: 290px;
+    }
+
+    .contact-card p {
+        width: 65%;
+        font-size: 25px;
+    }
+
+    .intropic {
+        width: 400px;
+    }
+}
+
+/* -----end----------1024px----------------- */
